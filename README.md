@@ -4,7 +4,7 @@ This repo contains status reports of e2e runs of over 25 models using SHARK/IREE
 They are organized by date and you can find a statusreport.md, summaryreport.md, and timereport.md
 for both onnx and turbine mode.
 
-Turbine mode leverages SHARK-Turbine's (https://github.com/nod-ai/SHARK-Turbine) aot export to torch-mlir and then uses IREE compilation and runtime tools.
+Turbine mode leverages SHARK-Turbine's (https://github.com/nod-ai/SHARK-Turbine) aot export to get the torch-mlir and then uses IREE compilation and runtime tools.
 Onnx mode converts the pytorch/onnx models to torch-mlir using onnx-import (converts to torch-onnx IR) + torch-mlir tools. Then, IREE compilation and runtime tools are used to run the IR.
 
 You can find wether they pass each phase of the process (statusreport.md), times for each phase per model (timereport.md), and overall e2e stats of running all the models (summaryreport.md) in these reports.
